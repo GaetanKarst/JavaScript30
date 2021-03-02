@@ -59,6 +59,28 @@
 
 <script>
 
+  const play = (/*night need to pass the click event?*/) => {
+    const rootElements = document.documentElement;
+
+    const getNode = (element) => {
+      for(let node in element){
+        //I think here I would need to get data-key attribute
+      }
+
+      if(element.children){
+        for(let node in element.children){
+          getNode(node);
+        }
+      }
+    }
+
+    getNode(documentElement);
+  }
+
+  function playSound(sound){
+
+  }
+
 </script>
 
 
